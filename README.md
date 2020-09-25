@@ -1,7 +1,13 @@
 # [Abandoned] Next Level Week 2 - Project Proffy v1
-Developed by: Goytai
+
+## Desenvolvedor (Developer)
+Nome (name): Nathan Vieira
+
+Apelido (nick): Goytai
 
 E-mail: dev.goytai@gmail.com
+
+Linkedin: https://linkedin.com/in/goytai
 
 ## Versão portuguêsa
 Projeto desenvolvido durante o NEXT LEVEL WEEK 2 organizado pela equipe da Rocketseat.
