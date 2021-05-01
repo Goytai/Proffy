@@ -33,6 +33,7 @@ The project was developed with:
 &rarr; <a href="https://nodejs.org/en/">Node</a> <br>
 &rarr; <a href="https://reactnative.dev/">React Native</a> <br>
 &rarr; <a href="https://expo.io/">Expo</a> <br>
+&rarr; <a href="https://sass-lang.com/">SASS</a> <br>
 
 ------------
 <h2>🔌 Getting started</h2>
