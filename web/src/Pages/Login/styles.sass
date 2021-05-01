@@ -1,0 +1,106 @@
+@import '../../assets/styles/_var'
+
+.container
+    display: flex
+    flex-direction: column
+    @media (min-width: 1110px) 
+        flex-direction: row
+
+.section-login
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 50vh
+    min-height: 350px
+    float: right
+
+    form
+        box-sizing: border-box
+        width: 35rem
+        max-width: 90%
+        display: flex
+        flex-direction: column
+
+        > *:not(:nth-last-child(1))
+            margin: 0 0 2rem 0
+            @media (min-width: 1110px) 
+                margin: 0 0 3rem 0
+        
+        .row
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+
+        .column
+            display: flex
+            flex-direction: column
+        
+        div:nth-child(1)
+            h1
+                font-family: 'Archivo'
+                font-size: 2.3rem
+                color: $color-title
+                @media (min-width: 1110px)
+                    font-size: 3rem
+            a
+                text-decoration: none
+                font-family: 'Poppins'
+                font-size: 1.3rem
+                color: $color-primary
+                @media ( min-width: 1110px )
+                    display: none
+                    
+        
+        div:nth-child(2) > *
+            width: 100%
+
+        div:nth-child(3)
+            > *
+                font-family: 'Poppins'
+                font-size: 1.5rem
+                color: $color-input-placeholder
+            a
+                text-decoration: none
+        
+        div:nth-child(4) button
+            @include button($color-button, $color-text-secundary)
+            &:hover, &:focus, &:active
+                background-color: $color-secundary
+                color: white
+
+    footer
+        display: none
+    
+    @media (min-width: 1110px)
+        width: 50%
+        height: 100vh
+
+        > footer
+            position: absolute
+            bottom: 4rem
+            width: 35rem
+
+            display: flex
+            justify-content: space-between
+            
+            div:nth-child(1)
+                font-family: 'Poppins'
+                font-size: 1.6rem
+                color: $color-text-primary
+                a
+                    color: $color-primary
+                    font-weight: bold
+            
+            div:nth-child(2)
+                font-family: 'Poppins'
+                font-size: 1.3rem
+                color: $color-text-secundary
+                span
+                    display: flex
+                    align-items: center
+                    img
+                        margin-left: 1rem
+                        opacity: 0.5
+

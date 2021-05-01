@@ -1,0 +1,208 @@
+.sectionForm {
+  margin-top: -3rem;
+  padding: 0 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (min-width: 820px) {
+  .sectionForm {
+    width: 800px;
+    padding: 0 0 2rem 0;
+  }
+}
+
+.sectionForm > div {
+  padding: 2rem 4rem 2rem 4rem;
+  border: 1px solid #E6E6F0;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: 0;
+  background-color: white;
+}
+
+.sectionForm > div > form {
+  width: 100%;
+}
+
+.sectionForm > div > form > * {
+  width: 100%;
+}
+
+.sectionForm > div > form .row {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 820px) {
+  .sectionForm > div > form .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.sectionForm > div > form .hours + .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionForm > div > form .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionForm > div > form .title {
+  font-family: 'Archivo';
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #32264D;
+  border-bottom: 1px solid #E6E6F0;
+  margin: 1rem 1rem 1.5rem 1rem;
+  padding: 1rem 0 1.5rem 0;
+}
+
+.sectionForm > div > form .row + .title {
+  margin-top: 3rem;
+}
+
+.sectionForm > div > form .inputLabel[data-family=price] input {
+  padding-left: 4.5rem;
+}
+
+.sectionForm > div > form .inputLabel[data-family=price]::after {
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  color: #6A6180;
+  content: 'R$';
+  left: 2rem;
+  bottom: 0;
+  height: 5.3rem;
+}
+
+.sectionForm > div > form .inputLabel[data-family=hours]::after {
+  z-index: 1;
+  position: absolute;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  color: #6A6180;
+  content: 'Horas';
+  left: 4.5rem;
+  bottom: 0;
+  height: 5.3rem;
+}
+
+.sectionForm > div > form > div:nth-last-child(1) {
+  margin-bottom: 5rem;
+}
+
+.sectionForm footer {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FAFAFC;
+  padding: 0rem 4rem 0rem 4rem;
+  border: 1px solid #E6E6F0;
+  border-radius: 0 0 1rem 1rem;
+  margin: 0 0 5rem 0;
+}
+
+.sectionForm footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.sectionForm footer > div > img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.sectionForm footer > div > p {
+  margin-left: 2rem;
+  font-family: 'Poppins';
+  font-size: 1.8rem;
+  color: #A0A0B2;
+}
+
+.sectionForm footer > div > p > span {
+  color: #8257E5;
+}
+
+.sectionForm footer > button {
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #04D361;
+  font-family: 'Archivo';
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sectionForm footer > button[data-secundary=true] {
+  background-color: #04D361;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,138 @@
+.select {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fill-available;
+}
+
+.select > label {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  color: #9C98A6;
+  margin-bottom: 1rem;
+}
+
+.select > label > span {
+  font-size: 1rem;
+  color: #C1BCCC;
+}
+
+.select > input, .select textarea, .select select, .select .selectBox {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  border: 1px solid #E6E6F0;
+  border-radius: 1rem;
+  background: #FAFAFC;
+  color: #6A6180;
+  outline: 0;
+  width: 100%;
+}
+
+.select > input:-webkit-autofill, .select textarea:-webkit-autofill, .select select:-webkit-autofill, .select .selectBox:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #FAFAFC inset;
+}
+
+.select:focus-within:not(.select)::before {
+  content: '';
+  width: calc(100% - 6rem);
+  height: 2px;
+  margin: 1rem 0 1rem 0;
+  z-index: 1;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+  background: #8257E5;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.select .selectBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-decoration: none;
+}
+
+.select .selectBox img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.select .selectBox:focus {
+  background: #EBEBF5;
+}
+
+.select .selectOptions {
+  list-style: none;
+  display: none;
+  z-index: 10;
+  width: calc(100% - 2rem);
+  top: 100%;
+  margin-top: -1rem;
+  margin-bottom: 5rem;
+  position: absolute;
+  background-color: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-top: none;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  overflow: hidden;
+}
+
+.select .selectOptions li {
+  font-family: "Poppins";
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem 1.5rem 3rem;
+  cursor: pointer;
+}
+
+.select .selectOptions li a {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.select .selectOptions li:not(:nth-last-child(1)) {
+  border-bottom: 1px solid #E6E6F0;
+}
+
+.select .selectOptions li[data-activeOption=true], .select .selectOptions li:focus-within {
+  background: #EBEBF5;
+  font-weight: 600;
+}
+
+.select .selectOptions li[data-activeOption=true]::before, .select .selectOptions li:focus-within::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  height: 100%;
+  width: 2px;
+  background: #8257E5;
+}
+
+.select select {
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,134 @@
+@import '../../assets/styles/_var'
+
+.sectionForm
+    margin-top: -3rem
+    padding: 0 2rem 2rem 2rem
+    width: 100%
+    max-width: 800px
+    @media (min-width: 820px)
+        width: 800px
+        padding: 0 0 2rem 0
+
+    > div
+        padding:  2rem 4rem 2rem 4rem
+
+        border: 1px solid $color-input-border
+        border-radius: 1rem 1rem 0 0
+        border-bottom: 0
+
+        background-color: white
+
+        > form
+            width: 100%
+
+            > *
+                width: 100%
+
+            .row
+                display: block
+                flex-direction: row
+                align-items: center
+                justify-content: space-around
+
+                @media (min-width: 820px)
+                    display: flex
+
+            .hours + .row
+                display: flex
+
+            .column
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: space-between
+
+            .title
+                font-family: 'Archivo'
+                font-size: 2.5rem
+                font-weight: 600
+                color: $color-title
+
+                border-bottom: 1px solid $color-input-border
+                margin: 1rem 1rem 1.5rem 1rem
+
+                padding: 1rem 0 1.5rem 0
+
+            .row + .title
+                margin-top: 3rem
+
+            @mixin pseudo ()
+                    z-index: 1
+                    position: absolute
+
+                    padding: 1rem
+
+                    display: flex
+                    align-items: center
+                    justify-items: center
+
+                    font-family: "Poppins"
+                    font-size: 1.5rem
+                    color: $color-text-primary
+                
+
+            .inputLabel[data-family=price]
+                input
+                    padding-left: 4.5rem
+
+                &::after
+                    @include pseudo ()
+
+                    content: 'R$'
+                    left: 2rem
+                    bottom: 0
+                    height: 5.3rem
+
+                    
+
+            .inputLabel[data-family=hours]::after
+                @include pseudo ()
+                
+                content: 'Horas'
+                left: 4.5rem
+                bottom: 0
+                height: 5.3rem
+
+            > div:nth-last-child(1)
+                margin-bottom: 5rem
+    footer
+        height: 150px
+
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+
+        background: $color-input-background
+
+        padding:  0rem 4rem 0rem 4rem
+        border: 1px solid $color-input-border
+        border-radius: 0 0 1rem 1rem
+
+        margin: 0 0 5rem 0
+
+        > div
+            display: flex
+            align-items: center
+            flex: 3
+
+            > img
+                height: 5rem
+                width: 5rem
+            
+            > p
+                margin-left: 2rem
+
+                font-family: 'Poppins'
+                font-size: 1.8rem
+                color: $color-text-footer
+
+                > span
+                    color: $color-primary
+        > button
+            @include button ($color-secundary, white )
+            flex: 1

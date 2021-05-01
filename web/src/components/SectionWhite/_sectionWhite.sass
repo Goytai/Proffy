@@ -1,0 +1,54 @@
+.sectionWhite
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 100vh
+    width: 100%
+    float: left
+    @media (min-width: 1110px) 
+        width: 50%
+
+    > div
+        position: absolute
+        top: 2rem
+        width: 35rem
+        max-width: 90%
+    
+    > form
+        box-sizing: border-box
+        width: 35rem
+        max-width: 90%
+        display: flex
+        flex-direction: column
+
+        > *:not(:nth-last-child(1))
+            margin: 0 0 2rem 0
+            @media (min-width: 1110px) 
+                margin: 0 0 3rem 0
+
+        div:nth-child(1)
+            h1 
+                font-family: 'Archivo'
+                font-size: 3.3rem
+                color: $color-title
+                margin-bottom: 1rem
+            
+            p
+                font-family: 'Poppins'
+                font-size: 1.5rem
+                color: $color-text-primary
+                width: 20rem
+                border-bottom: 1rem
+
+        div:nth-child(3) button
+            @include button($color-button, $color-text-secundary)
+            &:hover
+                background: $color-secundary
+                color: white
+
+
+.sectionWhite + .section-logo
+    display: none
+    @media (min-width: 1110px)
+        display: flex

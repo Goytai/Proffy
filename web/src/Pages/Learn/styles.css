@@ -1,0 +1,363 @@
+#learn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#learn .sectionHeader {
+  height: 50vh;
+}
+
+#learn .sectionHeader header .row {
+  height: auto;
+  margin: 0 auto 0 auto;
+}
+
+@media (min-width: 820px) {
+  #learn .sectionHeader header .row {
+    width: 800px;
+  }
+}
+
+#learn .sectionHeader header .row h1 {
+  width: 40rem;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+#learn .sectionHeader header .row > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#learn .sectionHeader header .row > div > p {
+  width: 40rem;
+}
+
+#learn .sectionHeader header .row > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#learn .sectionHeader header .row > div > div > p {
+  font-size: 1.5rem;
+}
+
+#learn .sectionHeader header .row > div > div > img {
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-right: 2rem;
+}
+
+#learn main {
+  margin-top: -7rem;
+  padding: 0 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (min-width: 820px) {
+  #learn main {
+    width: 800px;
+    padding: 0 0 2rem 0;
+  }
+}
+
+#learn main nav form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#learn main nav form label {
+  color: #D4C2FF;
+}
+
+#learn main nav form .inputLabel[data-family=hours]::after {
+  content: ': 00';
+  z-index: 1;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  color: #6A6180;
+  left: 5.5rem;
+  bottom: 1.3rem;
+  height: 5.3rem;
+}
+
+#learn main ul#list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 20rem;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 1.8rem;
+  color: #9C98A6;
+  list-style: none;
+}
+
+#learn main ul#list > li {
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+}
+
+#learn main ul#list > li div.file {
+  background: white;
+  padding: 4rem;
+  border: 1px solid #E6E6F0;
+  border-bottom: 0;
+  border-radius: 1rem 1rem 0 0;
+  text-align: start;
+}
+
+#learn main ul#list > li div.file img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 5rem;
+  margin-right: 2rem;
+}
+
+#learn main ul#list > li div.file h1 {
+  font-family: 'Archivo';
+  font-size: 2.5rem;
+  color: #32264D;
+}
+
+#learn main ul#list > li div.file h2 {
+  font-family: 'Poppins';
+  font-size: 2rem;
+  font-weight: 400;
+  color: #6A6180;
+  margin-top: .5rem;
+}
+
+#learn main ul#list > li div.file p {
+  color: #6A6180;
+  text-align: justify;
+  line-height: 3rem;
+}
+
+#learn main ul#list > li div.file .row:not(:nth-last-child(1)) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+#learn main ul#list > li div.file ul.week {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (min-width: 820px) {
+  #learn main ul#list > li div.file ul.week {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#learn main ul#list > li div.file ul.week li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  margin-bottom: .5rem;
+  border-radius: 1rem;
+  opacity: .4;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+@media (min-width: 820px) {
+  #learn main ul#list > li div.file ul.week li {
+    width: 14rem;
+    height: 16.6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 2rem;
+  }
+}
+
+#learn main ul#list > li div.file ul.week li[data-active=true] {
+  opacity: 1;
+}
+
+#learn main ul#list > li div.file ul.week li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#learn main ul#list > li div.file ul.week li div span {
+  font-size: 1.5rem;
+  display: none;
+}
+
+@media (min-width: 820px) {
+  #learn main ul#list > li div.file ul.week li div span {
+    display: block;
+  }
+}
+
+#learn main ul#list > li div.file ul.week li div strong {
+  font-family: 'Archivo';
+  font-weight: 600;
+  font-size: 2rem;
+  color: #6A6180;
+}
+
+#learn main ul#list > li > footer {
+  width: 100%;
+  height: 13rem;
+  border: 1px solid #E6E6F0;
+  border-radius: 0 0 1rem 1rem;
+  background: #FAFAFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4rem 0 4rem;
+}
+
+#learn main ul#list > li > footer div span {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+#learn main ul#list > li > footer div strong {
+  font-weight: 800;
+  font-family: 'Archivo';
+  font-size: 2.3rem;
+  color: #8257E5;
+}
+
+#learn main ul#list > li > footer a {
+  text-decoration: none;
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #04D361;
+  font-family: 'Archivo';
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  max-width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#learn main ul#list > li > footer a[data-secundary=true] {
+  background-color: #04D361;
+  color: white;
+}
+
+#learn main ul#list > footer {
+  margin: 3rem;
+}
+/*# sourceMappingURL=styles.css.map */

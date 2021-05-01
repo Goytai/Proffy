@@ -1,0 +1,352 @@
+.home {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#homeTop {
+  width: 100%;
+  height: 50vh;
+  background: #8257E5;
+}
+
+@media (min-width: 1000px) {
+  #homeTop {
+    height: 65vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  #homeTop {
+    padding: 2rem 19.2rem 2rem 19.2rem;
+  }
+}
+
+#homeTop header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+#homeTop header > a {
+  height: 4rem;
+  color: #D4C2FF;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homeTop header > a:nth-child(1) img {
+  height: 100%;
+  border-radius: 3rem;
+  margin-right: 2rem;
+}
+
+#homeTop header > a:nth-child(1) span {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  font-family: 'Poppins';
+  font-size: 2rem;
+}
+
+#homeTop header > a:nth-child(2) {
+  width: 4rem;
+  border-radius: 1rem;
+  background: #774DD6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#homeTop header > a:nth-child(2) img {
+  width: 50%;
+  height: 50%;
+}
+
+#homeTop > div {
+  padding: 2rem;
+  height: calc(100% - 8rem);
+  width: 100%;
+}
+
+#homeTop > div > div {
+  height: 100%;
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (min-width: 1000px) {
+  #homeTop > div > div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 1280px) {
+  #homeTop > div > div {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#homeTop > div > div > img {
+  height: 100%;
+  max-width: 100%;
+}
+
+#homeTop > div > div > div {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+  #homeTop > div > div > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#homeTop > div > div > div > img {
+  width: 30rem;
+}
+
+#homeTop > div > div > div > p {
+  margin-top: 1rem;
+  font-family: 'Poppins';
+  color: #D4C2FF;
+  font-size: 2.3rem;
+  max-width: 250px;
+}
+
+#homeBotton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  padding: 2rem;
+}
+
+@media (min-width: 1000px) {
+  #homeBotton {
+    height: 35vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  #homeBotton {
+    padding: 2rem 19.2rem 2rem 19.2rem;
+  }
+}
+
+#homeBotton > div {
+  width: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#homeBotton > div > * {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  #homeBotton > div {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #homeBotton > div > * {
+    width: auto;
+  }
+}
+
+#homeBotton > div > p {
+  font-family: 'Poppins';
+  font-size: 2rem;
+  color: #6A6180;
+}
+
+@media (min-width: 1000px) {
+  #homeBotton > div > p {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  #homeBotton > div > p {
+    margin: 0;
+  }
+}
+
+#homeBotton > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50%;
+}
+
+@media (min-width: 1000px) {
+  #homeBotton > div > div {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 40%;
+    height: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  #homeBotton > div > div {
+    margin: 0;
+    width: 50%;
+  }
+}
+
+#homeBotton > div > div > a {
+  text-decoration: none;
+  width: 20rem;
+  height: 100%;
+}
+
+@media (min-width: 1000px) {
+  #homeBotton > div > div > a {
+    height: auto;
+    width: 45%;
+  }
+}
+
+#homeBotton > div > div > a button {
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #8257E5;
+  font-family: 'Archivo';
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  font-size: 2.3rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#homeBotton > div > div > a button[data-secundary=true] {
+  background-color: #04D361;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  #homeBotton > div > div > a button {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 8rem;
+  }
+}
+
+#homeBotton > div > div > a button img {
+  height: 4rem;
+}
+
+#homeBotton > div > div > a:nth-child(2) button {
+  background-color: #04D361;
+}
+
+#homeBotton > div > span {
+  font-family: 'Poppins';
+  font-size: 1.5rem;
+  color: #9C98A6;
+  width: 18rem;
+}
+
+#homeBotton > div > span img {
+  opacity: .5;
+}
+
+@media (min-width: 1000px) {
+  #homeBotton > div > span {
+    text-align: end;
+    margin-left: auto;
+    padding-right: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

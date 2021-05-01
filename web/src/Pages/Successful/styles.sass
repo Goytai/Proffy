@@ -1,0 +1,72 @@
+@import '../../assets/styles/_var'
+
+.section-successful
+    width: 100%
+    height: 100vh
+
+    background: $color-primary
+    background-image: url('../../assets/imgs/background.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 90% 100%
+    
+    display: flex
+    justify-content: center
+    align-items: center
+
+    @media ( min-width: 1110px )
+        background-image: url('../../assets/imgs/background-2.svg')
+        background-size: 100% 80%
+
+    > div
+        display: flex
+        align-items: center
+        justify-content: center
+
+        flex-direction: column
+
+        > img
+            height: 10rem
+            width: 10rem
+
+        > h1
+            font-family: 'Archivo'
+            font-size: 4rem
+            color: white
+            text-align: center
+            width: 210px
+
+            margin: 3rem 0 2.5rem 0
+
+            @media ( min-width: 1110px )
+                width: auto
+        
+        > p
+            font-family: 'Poppins'
+            font-weight: 100
+            font-size: 1.8rem
+            text-align: center
+
+            width: 250px
+            margin-bottom: 20vh
+
+            color: $color-text-header
+
+            @media ( min-width: 1110px )
+                width: 50rem
+                font-size: 1.5rem
+                margin-bottom: 10rem
+
+            > span
+                display: none
+                @media ( min-width: 1110px )
+                    display: block
+        
+        > a 
+            width: 100%
+            margin-bottom: 1rem
+            min-width: 20rem
+            max-width: max-content
+            button
+                @include button ($color-secundary, white )
+            

@@ -1,0 +1,93 @@
+$color-primary: #8257E5
+$color-secundary: #04D361
+$color-tertiary: #E33D3D
+$color-background: #F0F0F7
+$color-title: #32264D
+$color-button: #DCDCE5
+$color-text-primary: #6A6180
+$color-text-secundary: #9C98A6
+$color-text-header: #D4C2FF
+$color-text-span: #C1BCCC
+$color-text-footer: #A0A0B2
+$color-input-border: #E6E6F0
+$color-input-placeholder: #9C98A6
+$color-input-background: #FAFAFC
+$color-nav: #774DD6
+$color-nav-border: #6842C2
+$color-nav-text: #BDA5F6
+$color-red: #E33D3D
+$color-option-background: #EBEBF5
+
+@mixin button ($background, $color)
+    width: 100%
+    padding: 2rem
+
+    border: none
+    border-radius: 1rem
+    background-color: $background
+
+    font-family: 'Archivo'
+    font-size: 1.7rem
+    font-weight: 600
+    color: $color
+    outline: none
+
+    transition: 1s all
+
+    &[data-secundary=true]
+        background-color: $color-secundary
+        color: white
+    
+@mixin formElements ()
+    padding: 1rem
+    display: flex
+    flex: 1
+
+    flex-direction: column
+
+    width: -webkit-fill-available
+
+    > label
+        font-family: "Poppins"
+        font-size: 1.5rem
+        color: $color-text-secundary
+
+        margin-bottom: 1rem
+
+        > span
+            font-size: 1rem
+            color: $color-text-span
+
+    > input, textarea, select, .selectBox
+        font-family: "Poppins"
+        font-size: 1.5rem
+        padding: 1.5rem 2rem 1.5rem 2rem
+
+        border: 1px solid $color-input-border
+        border-radius: 1rem
+
+        background: $color-input-background
+        color: $color-text-primary
+        outline: 0
+
+        width: 100%
+
+        &:-webkit-autofill
+            -webkit-box-shadow: 0 0 0 30px $color-input-background inset;
+    
+    &:focus-within:not(.select)::before
+       content: ''
+       width: calc(100% - 6rem)
+       height: 2px
+       margin: 1rem 0 1rem 0
+
+       z-index: 1
+       border-radius: 2px
+
+
+       position: absolute
+       bottom: 0
+       left: 3rem
+
+       background: $color-primary
+       transition: 1s

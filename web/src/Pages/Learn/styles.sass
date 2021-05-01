@@ -1,0 +1,233 @@
+@import '../../assets/styles/_var'
+
+#learn
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .sectionHeader
+        height: 50vh
+
+#learn .sectionHeader header .row
+    height: auto
+    margin: 0 auto 0 auto
+
+    @media (min-width: 820px)
+        width: 800px
+        
+
+    h1
+        width: 40rem
+        font-size: 3.5rem
+        line-height: 4.5rem
+        margin-bottom: 2rem
+
+    > div
+        display: flex
+        flex-direction: row
+        align-items: flex-end
+        justify-content: space-between
+
+        > p
+            width: 40rem
+        
+        > div
+            display: flex
+            flex-direction: row
+            align-items: center
+
+            > p
+                font-size: 1.5rem
+
+            > img
+                height: 3.2rem
+                width: 3.2rem
+                margin-right: 2rem
+
+#learn main
+    margin-top: -7rem
+    padding: 0 2rem 2rem 2rem
+    width: 100%
+    max-width: 800px
+    @media (min-width: 820px)
+        width: 800px
+        padding: 0 0 2rem 0
+    
+    nav form 
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+
+        label
+            color: $color-text-header
+
+        .inputLabel[data-family=hours]::after
+            content: ': 00'
+            z-index: 1
+            position: absolute
+
+            display: flex
+            align-items: center
+            justify-items: center
+
+            font-family: "Poppins"
+            font-size: 1.5rem
+            color: $color-text-primary
+            
+            left: 5.5rem
+            bottom: 1.3rem
+            height: 5.3rem
+
+    ul#list
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+
+        min-height: 20rem
+
+        text-align: center
+        font-family: 'Poppins'
+        font-size: 1.8rem
+        color: $color-input-placeholder
+
+        list-style: none
+
+        > li
+            margin: 1rem 0 1rem 0
+            width: 100%
+
+            div.file
+                background: white
+                padding: 4rem
+                border: 1px solid $color-input-border
+                border-bottom: 0
+                border-radius: 1rem 1rem 0 0
+
+                text-align: start
+
+                img
+                    width: 8rem
+                    height: 8rem
+                    border-radius: 5rem
+                    margin-right: 2rem
+
+                h1
+                    font-family: 'Archivo'
+                    font-size: 2.5rem
+                    color: $color-title
+
+                h2
+                    font-family: 'Poppins'
+                    font-size: 2rem
+                    font-weight: 400
+                    color: $color-text-primary
+                    margin-top: .5rem
+
+                p 
+                    color: $color-text-primary
+                    text-align: justify
+                    line-height: 3rem
+
+                .row:not(:nth-last-child(1))
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    margin-bottom: 3rem
+
+                ul.week
+                    list-style: none
+
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-around
+                    flex-wrap: wrap
+
+                    width: 100%
+
+                    @media (min-width: 820px)
+                        flex-direction: row
+
+                    li
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-between
+                        
+                        background: $color-input-background
+                        border: 1px solid $color-input-border
+                        margin-bottom: .5rem
+                        border-radius: 1rem
+                        opacity: .4
+
+                        width: 100%
+                        height: min-content
+
+                        padding: 1rem 2rem 1rem 2rem
+
+                        @media (min-width: 820px)
+                            width: 14rem
+                            height: 16.6rem
+                            flex-direction: column
+                            justify-content: space-around
+                            padding: 2rem
+
+
+
+                        &[data-active=true]
+                            opacity: 1
+
+                        div
+                            display: flex
+                            flex-direction: column
+
+                            span
+                                font-size: 1.5rem
+                                display: none
+
+                                @media (min-width: 820px)
+                                    display: block
+
+                            strong
+                                font-family: 'Archivo'
+                                font-weight: 600
+                                font-size: 2rem
+                                color: $color-text-primary
+        
+            > footer
+                width: 100%
+                height: 13rem
+
+                border: 1px solid $color-input-border
+                border-radius: 0 0 1rem 1rem
+                background: $color-input-background
+
+                display: flex
+                justify-content: space-between
+                align-items: center
+
+                padding: 0 4rem 0 4rem
+
+                div
+                    span
+                        font-size: 1.5rem
+                        margin-right: 2rem 
+
+                    strong
+                        font-weight: 800
+                        font-family: 'Archivo'
+                        font-size: 2.3rem
+                        color: $color-primary
+                a
+                    text-decoration: none
+
+                    @include button ($color-secundary, white)
+
+                    max-width: 40%
+
+                    display: flex
+                    justify-content: space-evenly
+                    align-items: center
+    
+        > footer
+            margin: 3rem
+                    

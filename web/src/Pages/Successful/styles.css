@@ -1,0 +1,119 @@
+.section-successful {
+  width: 100%;
+  height: 100vh;
+  background: #8257E5;
+  background-image: url("../../assets/imgs/background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1110px) {
+  .section-successful {
+    background-image: url("../../assets/imgs/background-2.svg");
+    background-size: 100% 80%;
+  }
+}
+
+.section-successful > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-successful > div > img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.section-successful > div > h1 {
+  font-family: 'Archivo';
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  width: 210px;
+  margin: 3rem 0 2.5rem 0;
+}
+
+@media (min-width: 1110px) {
+  .section-successful > div > h1 {
+    width: auto;
+  }
+}
+
+.section-successful > div > p {
+  font-family: 'Poppins';
+  font-weight: 100;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 250px;
+  margin-bottom: 20vh;
+  color: #D4C2FF;
+}
+
+@media (min-width: 1110px) {
+  .section-successful > div > p {
+    width: 50rem;
+    font-size: 1.5rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.section-successful > div > p > span {
+  display: none;
+}
+
+@media (min-width: 1110px) {
+  .section-successful > div > p > span {
+    display: block;
+  }
+}
+
+.section-successful > div > a {
+  width: 100%;
+  margin-bottom: 1rem;
+  min-width: 20rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.section-successful > div > a button {
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #04D361;
+  font-family: 'Archivo';
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.section-successful > div > a button[data-secundary=true] {
+  background-color: #04D361;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

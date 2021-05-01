@@ -1,0 +1,202 @@
+@import '../../assets/styles/_var'
+
+.home
+    width: 100%
+    display: flex
+    flex-direction: column
+
+#homeTop
+    width: 100%
+    height: 50vh
+    background: $color-primary
+
+    @media (min-width: 1000px)
+        height: 65vh
+
+    @media (min-width: 1280px)
+        padding: 2rem 19.2rem 2rem 19.2rem
+
+    header
+        width: 100%
+        display: flex
+        justify-content: space-between
+        padding: 2rem
+
+        > a 
+            height: 4rem
+
+            color: $color-text-header
+            text-decoration: none
+
+            display: flex
+            align-items: center
+
+            &:nth-child(1)
+                img
+                    height: 100%
+                    border-radius: 3rem
+                    margin-right: 2rem
+                
+                span
+                    height: min-content
+
+                    font-family: 'Poppins'
+                    font-size: 2rem
+            
+            &:nth-child(2)
+                width: 4rem
+
+                border-radius: 1rem
+                background: $color-nav
+                
+                display: flex
+                justify-content: center
+                align-items: center
+
+                img
+                    width: 50%
+                    height: 50%
+        
+    > div
+        padding: 2rem
+
+        height: calc(100% - 8rem)
+        width: 100%
+
+        > div
+            height: 100%
+            padding-bottom: 2rem
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: row
+
+            @media (min-width: 1000px)
+                justify-content: space-around
+            @media (min-width: 1280px)
+                justify-content: space-between
+            
+
+            > img
+                height: 100%
+                max-width: 100%
+
+
+            > div
+                display: none
+                justify-content: center
+                flex-direction: column
+
+                @media (min-width: 1000px)
+                    display: flex
+
+                > img
+                    width: 30rem
+                > p
+                    margin-top: 1rem
+                    font-family: 'Poppins'
+                    color: $color-text-header
+                    font-size: 2.3rem
+                    max-width: 250px
+
+#homeBotton
+    display: flex
+    justify-content: center
+
+    height: 50vh
+    padding: 2rem
+
+    @media (min-width: 1000px)
+        height: 35vh
+    
+    @media (min-width: 1280px)
+        padding: 2rem 19.2rem 2rem 19.2rem
+
+    > div
+        width: 50rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        > *
+            width: 100%
+
+        @media (min-width: 1000px)
+            width: 100%
+            flex-direction: row
+            align-items: center
+            justify-content: space-around
+
+            > *
+                width: auto
+
+        > p
+            font-family: 'Poppins'
+            font-size: 2rem
+            color: $color-text-primary
+            @media (min-width: 1000px)
+                margin-left: auto
+            @media (min-width: 1280px)
+                margin: 0
+        
+        > div
+            display: flex
+
+            justify-content: space-around
+            height: 50%
+
+            @media (min-width: 1000px)
+                order: 3
+                width: 40%
+                height: auto
+                margin-right: auto
+            @media (min-width: 1280px)
+                margin: 0
+                width: 50%
+
+            > a
+                text-decoration: none
+
+                width: 20rem
+                height: 100%
+
+                @media (min-width: 1000px)
+                    height: auto
+                    width: 45%
+                
+                button
+                    @include button ($color-primary, white)
+
+                    font-size: 2.3rem
+
+                    height: 100%
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+
+                    @media (min-width: 1000px)
+                        flex-direction: row
+                        justify-content: space-around
+                        align-items: center
+                        height: 8rem
+
+                    img
+                        height: 4rem
+
+                &:nth-child(2) button
+                    background-color: $color-secundary
+        
+        > span
+            font-family: 'Poppins'
+            font-size: 1.5rem
+            color: $color-text-secundary
+            width: 18rem
+
+            img 
+                opacity: .5
+
+            @media (min-width: 1000px)
+                text-align: end
+                margin-left: auto
+                padding-right: 1rem
+                

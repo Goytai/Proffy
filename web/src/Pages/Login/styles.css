@@ -1,0 +1,200 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1110px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.section-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  min-height: 350px;
+  float: right;
+}
+
+.section-login form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 35rem;
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-login form > *:not(:nth-last-child(1)) {
+  margin: 0 0 2rem 0;
+}
+
+@media (min-width: 1110px) {
+  .section-login form > *:not(:nth-last-child(1)) {
+    margin: 0 0 3rem 0;
+  }
+}
+
+.section-login form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-login form .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-login form div:nth-child(1) h1 {
+  font-family: 'Archivo';
+  font-size: 2.3rem;
+  color: #32264D;
+}
+
+@media (min-width: 1110px) {
+  .section-login form div:nth-child(1) h1 {
+    font-size: 3rem;
+  }
+}
+
+.section-login form div:nth-child(1) a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+  color: #8257E5;
+}
+
+@media (min-width: 1110px) {
+  .section-login form div:nth-child(1) a {
+    display: none;
+  }
+}
+
+.section-login form div:nth-child(2) > * {
+  width: 100%;
+}
+
+.section-login form div:nth-child(3) > * {
+  font-family: 'Poppins';
+  font-size: 1.5rem;
+  color: #9C98A6;
+}
+
+.section-login form div:nth-child(3) a {
+  text-decoration: none;
+}
+
+.section-login form div:nth-child(4) button {
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #DCDCE5;
+  font-family: 'Archivo';
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #9C98A6;
+  outline: none;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.section-login form div:nth-child(4) button[data-secundary=true] {
+  background-color: #04D361;
+  color: white;
+}
+
+.section-login form div:nth-child(4) button:hover, .section-login form div:nth-child(4) button:focus, .section-login form div:nth-child(4) button:active {
+  background-color: #04D361;
+  color: white;
+}
+
+.section-login footer {
+  display: none;
+}
+
+@media (min-width: 1110px) {
+  .section-login {
+    width: 50%;
+    height: 100vh;
+  }
+  .section-login > footer {
+    position: absolute;
+    bottom: 4rem;
+    width: 35rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-login > footer div:nth-child(1) {
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    color: #6A6180;
+  }
+  .section-login > footer div:nth-child(1) a {
+    color: #8257E5;
+    font-weight: bold;
+  }
+  .section-login > footer div:nth-child(2) {
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    color: #9C98A6;
+  }
+  .section-login > footer div:nth-child(2) span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-login > footer div:nth-child(2) span img {
+    margin-left: 1rem;
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,77 @@
+@import '../../assets/styles/_var'
+
+.select
+    @include formElements ()
+
+    .selectBox
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        flex-wrap: nowrap
+
+        text-decoration: none
+
+        img
+            height: 2.4rem
+            width: 2.4rem
+        
+        &:focus
+            background: $color-option-background
+
+
+    .selectOptions
+        list-style: none
+        display: none
+
+        z-index: 10
+
+        width: calc(100% - 2rem)
+        top: 100%
+        margin-top: -1rem
+        margin-bottom: 5rem
+        position: absolute
+
+        background-color: $color-input-background
+        border: 1px solid $color-input-border
+        border-top: none
+
+        border-bottom-left-radius: 1rem
+        border-bottom-right-radius: 1rem
+
+        overflow: hidden
+
+        li
+            font-family: "Poppins"
+            width: 100%
+            font-size: 1.5rem
+            padding: 1.5rem 2rem 1.5rem 3rem
+            cursor: pointer
+
+            a
+                height: 0
+                width: 0
+                opacity: 0
+        
+            &:not(:nth-last-child(1))
+                border-bottom: 1px solid $color-input-border
+
+            &[data-activeOption=true], &:focus-within
+                background: $color-option-background
+
+                font-weight: 600
+
+                &::before
+                    content: ''
+                    position: absolute
+
+                    left: 0
+                    top: 0
+
+                    z-index: 20
+
+                    height: 100%
+                    width: 2px
+                    background: $color-primary
+    
+    select
+        display: block

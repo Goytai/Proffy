@@ -1,0 +1,30 @@
+@import '../../assets/styles/_var'
+
+.checkbox
+    input
+        display: none
+        
+    label
+        padding-left: 3rem
+
+        &:before
+            content: ''
+            position: absolute
+            box-sizing: border-box
+
+            height: 2rem
+            width: 2rem
+            left: 0
+            background: #fff
+            border: 2px solid $color-text-secundary
+            border-radius: 0.5rem
+
+            transition: 0.5s background-color
+
+        &[data-checkbox]:before
+            background: $color-secundary
+            border: 2px solid $color-secundary
+            background-image: url('../../assets/imgs/icon/checkbox.svg')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 65%

@@ -1,0 +1,79 @@
+#profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#profile .sectionHeader {
+  height: 60vh;
+}
+
+#profile .sectionHeader header {
+  background-image: url("../../assets/imgs/background-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 90%;
+}
+
+@media (min-width: 1110px) {
+  #profile .sectionHeader header {
+    background-position: center 2rem;
+    background-size: 50% auto;
+  }
+}
+
+#profile .sectionHeader header .headerCenter {
+  top: -1.5rem;
+  height: 80%;
+}
+
+#profile .sectionHeader header .headerCenter > div > img {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 8rem;
+  margin-bottom: 3rem;
+}
+
+#profile .sectionHeader header .headerCenter > div > button {
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #04D361;
+  font-family: 'Archivo';
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 2.5rem;
+  bottom: 3rem;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#profile .sectionHeader header .headerCenter > div > button[data-secundary=true] {
+  background-color: #04D361;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
